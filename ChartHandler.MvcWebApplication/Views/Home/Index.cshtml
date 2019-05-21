@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Chart Handler";
+}
+
+<div class="jumbotron">
+    <h1>Chart Handler Web Application</h1>
+    <p class="lead">This web application will return a dynamically generated chart based on the requested url and querystring parameters.</p>
+    <p>It is also intended to be an example of what is possible in the much overlooked DataVisualization namespace.</p>
+
+    <div class="alert alert-info">/chart/view/?w=300&h=300&t=some-rather-long-title&f=1&s1n=Series1&s1t=column&xn=Horizontal&yn=Vertical&s1xv=1|2|3|4|5&s1yv=10|20|30|40|50</div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Pie Chart</h2>
+        <p><img src="/chart/view/?w=300&h=300&t=some-rather-long-title&f=1&s1n=Series1&s1t=pie&xn=Horizontal&yn=Vertical&s1xv=1|2|3|4|5&s1yv=10|20|30|40|50" alt="Test 1" style="border: 1px solid #eee;" /></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Bar Chart</h2>
+        <p><img src="/chart/view/?w=300&h=300&t=some-rather-long-title&f=1&s1n=Series1&s1t=bar&xn=Horizontal&yn=Vertical&s1xv=1|2|3|4|5&s1yv=10|20|30|40|50" alt="Test 1" style="border: 1px solid #eee;" /></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Column Chart</h2>
+        <p><img src="/chart/view/?w=300&h=300&t=some-rather-long-title&f=1&s1n=Series1&s1t=column&xn=Horizontal&yn=Vertical&s1xv=1|2|3|4|5&s1yv=10|20|30|40|50" alt="Test 1" style="border: 1px solid #eee;" /></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Line Chart</h2>
+        <p><img src="/chart/view/?w=300&h=300&t=some-rather-long-title&f=1&s1n=Series1&s1t=line&xn=Horizontal&yn=Vertical&s1xv=1|2|3|4|5&s1yv=10|20|30|40|50" alt="Test 1" style="border: 1px solid #eee;" /></p>
+    </div>
+    <div class="col-md-4">
+        <h2>With Dates</h2>
+        <p><img src="/chart/view/?w=300&h=300&t=some-rather-long-title&f=1&s1n=Series1&s1t=line&xn=Horizontal&yn=Vertical&s1xv=01-01-2018|02-01-2018|03-01-2018&s1yv=10|25|32" alt="Test 1" style="border: 1px solid #eee;" /></p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>Chart Test 6</h2>
+        
+    </div>
+</div>
